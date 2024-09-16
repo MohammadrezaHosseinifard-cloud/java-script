@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <style>
+      /* Container styling to mimic a window */
+
+      .holl-window {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .window {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      /* Button styling */
+      .window button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #09396c;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      /* Hover effect */
+      .window button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body class="holl-window">
+    <p>Rock Paper Scissors</p>
+    <div class="window">
+      <button
+      class="window button"
+      onclick="
+      const randomNumber = Math.random();
+
+
+      let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber < 1/3) {
+        computerMove = 'Rock' ;
+      }else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove = 'Paper';
+      }else if (randomNumber >= 2/3 && randomNumber < 1) {
+        computerMove = 'Scissors';
+      }
+    
+
+      
+
+      let result = '';
+      if (computerMove === 'Rock') {
+        result = 'tie' ;
+      }else if (computerMove === 'Paper') {
+        result = 'lose';
+      }else if (computerMove === 'Scissors') {
+        result = 'win';
+      }
+
+      alert(`You picked rock. Computer picked ${computerMove}. ${result}.`);
+    "
+    >
+      Rock
+    </button>
+    <button
+      class="window button"
+      onclick="
+      const randomNumber1 = Math.random();
+
+
+      let computerMove1 = '';
+
+      if (randomNumber1 >= 0 && randomNumber1 < 1/3) {
+        computerMove1 = 'Rock' ;
+      }else if (randomNumber1 >= 1/3 && randomNumber1 < 2/3) {
+        computerMove1 = 'Paper';
+      }else if (randomNumber1 >= 2/3 && randomNumber1 < 1) {
+        computerMove1 = 'Scissors';
+      }
+    
+
+      
+
+      let result1 = '';
+      if (computerMove1 === 'Rock') {
+        result1 = 'win' ;
+      }else if (computerMove1 === 'Paper') {
+        result1 = 'tie';
+      }else if (computerMove1 === 'Scissors') {
+        result1 = 'lose';
+      }
+
+      alert(`You picked Paper. Computer picked ${computerMove1}. ${result1}.`);
+    "
+    >
+      Paper
+    </button>
+    
+    </button>
+    <button
+      class="window"
+      onclick="
+    const randomNumber2 = Math.random();
+
+
+    let computerMove2 = '';
+
+    if (randomNumber2 >= 0 && randomNumber2 < 1/3) {
+      computerMove2 = 'Rock' ;
+    }else if (randomNumber2 >= 1/3 && randomNumber2 < 2/3) {
+      computerMove2 = 'Paper';
+    }else if (randomNumber2 >= 2/3 && randomNumber2 < 1) {
+      computerMove2 = 'Scissors';
+    }
+  
+
+    
+
+    let result2 = '';
+    if (computerMove2 === 'Rock') {
+      result2 = 'lose' ;
+    }else if (computerMove2 === 'Paper') {
+      result2 = 'win';
+    }else if (computerMove2 === 'Scissors') {
+      result2 = 'tie';
+    }
+
+    alert(`You picked Scissors. Computer picked ${computerMove2}. ${result2}.`);
+  "
+    >
+      Scissors
+    </button>
+    </div>
+
+    <script></script>
+  </body>
+</html>

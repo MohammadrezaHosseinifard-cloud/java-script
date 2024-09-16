@@ -1,0 +1,64 @@
+/* Container styling to mimic a window */
+
+body {
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.window {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  background-color: #89de09d4;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Button styling */
+.window button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
+/* Hover effect */
+.window button:hover {
+  background-color: red;
+}
+
+.user-display p {
+  width: 600px;
+  height: 50px;
+  padding: 20px;
+  background-color: #89de09d4;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.move-icon {
+  height: 50px;
+}
